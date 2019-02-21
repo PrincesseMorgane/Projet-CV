@@ -1,6 +1,6 @@
 
 
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 
 /* RESET*/
 
@@ -51,6 +51,9 @@ table {
 	border-spacing: 0;
 }
 
+/************/
+/**GENERAL**/
+/**********/
 
 /* PALETTE DE COULEURS/
 		couleur texte : body #D5D4D4
@@ -64,8 +67,6 @@ table {
 		h2 : oswald, times;
 		*/
 
-
-
 body {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 14px;
@@ -73,13 +74,28 @@ body {
 	background-color: black;
 } 
 
-/*HEADER*/
+@font-face {
+	font-family: Oswald;
+	src: url(../font/Oswald-Regular.ttf);
+}
+@font-face {
+	font-family: HarryP;
+	src: url(../font/HARRYP_.ttf);
+}
+
+
+
+
+/**********/
+/**HEADER**/
+/*********/
+
 
 header {
 	background-color: #457175;
 	margin: 0 auto;
-	width: 1000px;
-	min-height: 115px;
+	max-width: 1000px;
+	max-height: 115px;
 	padding: 0px 24px;
 }
 
@@ -101,8 +117,19 @@ header li {
 	margin: 0.916em;
 	font-weight: bold;
 }
+header p, header ul {
+	display: inline;
+}
+header p {
+	font-weight: bold;
+}
+header h1 {
+	font-size: 1.71em;
+	margin: 0.833em 0em 0em 0.75em;
+}
 nav {
 	clear: left;
+	display: inline;
 }
 nav h2 {
 	text-indent: -9999px;
@@ -112,29 +139,45 @@ nav h2 {
 ul {
 	margin-bottom: 0em;
 }
+.page {
+	font-size: 0.85em;
+	padding: 0.58em 1em;
+	border: 1px solid white;
+	font-variant: small-caps;
+	font-weight: bold;
+	margin: 1.6em 1.25em;
+}
 
-.nav {
+.inpres {
 	background-color: #002a32;
 	color: white;
 	min-height: 55px;
 
 }
-.nav li, .nav h1 {
+.inpres li, .inpres h1 {
 	display: inline;
 	font-family: Rubik;
+	font-variant: small-caps;
 }
-.nav a {
-	color: #75a4a9;
+.inpres a {
+	color: #00d6d6;
 	font-size: 1.12em;
 }
-.nav input {
+.inpres input, .inpres p, .inpres ul {
 	display: inline;
+}
+.inpres ul {
+	font-size: 1.14em
+}
+.inpres a:hover {
+	color: white;
+	text-decoration: none;
 }
 
 /*MAIN SECTION*/
 
 h1 {
-	font-size: 3em;
+	font-size: 2.5em;
 	padding: 1.333em 0em 1em 0em;
 	margin: 0em;
 }
@@ -164,7 +207,7 @@ p {
 div h2 {
 	font-family: Oswald, Times;
 	border-bottom: solid 2px white;
-	font-size: 2.083em;
+	font-size: 1.7em;
 	padding:0.416em;
 	margin: 1.166em 0em 0.416em 0em;
 }
@@ -199,7 +242,7 @@ a:hover {
 
 aside {
 	background-color: black;
-	width: 250px;
+	width: 310px;
 	margin-top: 7.5em;
 	float: right;
 }
@@ -209,21 +252,23 @@ aside img {
 }
 aside h2 {
 	background-color: black;
-	font-size: 1.5em;
-	padding: 0.416em;
+	font-size: 1.28em;
+	padding: 0.27em;
 	text-align: center;
 }
 h3 {
 	background-color: #131F26;
-	padding: 0.416em;
+	padding: 0.41em;
 	margin: 0px;
 	border-bottom: 2px solid #999;
+	padding: 0.85em;
 }
 aside dl div {
 	background-color: #253947;
 	border-bottom: 2px solid #999;
-	padding: 0.416em 0em 0.416em 0em;
+	padding: 0.41em;
 	width: 100%;
+	font-size: 0.85em;
 }
 dl {
 	margin: 0;
