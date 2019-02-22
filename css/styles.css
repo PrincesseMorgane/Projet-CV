@@ -82,7 +82,10 @@ body {
 	font-family: HarryP;
 	src: url(../font/HARRYP_.ttf);
 }
-
+@font-face {
+	font-family: Helvetica Neue;
+	src: url(../font/HelveticaNeue.woff);
+}
 
 
 
@@ -208,13 +211,13 @@ li {
 	background-color: #457175;
 	padding: 0.58em 1em;
 	font-size: 0.85em;
-	border: 1px solid;
 	font-variant: small-caps;
 	color: white;
 	font-weight: bold;
 	height: 34px;
+	display: inline-block;
 }
-.modif {
+#modif {
 	height: 34px;
     width: 50px;
     background-color: #457175;
@@ -246,8 +249,8 @@ p {
  }
 
 
-div h2 {
-	font-family: Oswald, Times;
+section h2 {
+	font-family: 'Oswald', 'Times', serif;
 	border-bottom: solid 2px white;
 	font-size: 1.7em;
 	padding:0.416em;
@@ -297,6 +300,7 @@ a:hover {
 	font-size: 1.28em;
 	padding: 0.27em;
 	text-align: center;
+	font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
 }
 h3 {
 	background-color: #131F26;
