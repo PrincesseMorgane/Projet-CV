@@ -91,12 +91,16 @@ body {
 /*********/
 
 
+.wiki_inpres {
+	display: inline;
+}
+
 header {
 	background-color: #457175;
 	margin: 0 auto;
 	max-width: 1000px;
-	max-height: 115px;
-	padding: 0px 24px;
+	min-height: 115px;
+	padding: 0px 28px;
 }
 
 header img {
@@ -117,11 +121,12 @@ header li {
 	margin: 0.916em;
 	font-weight: bold;
 }
-header p, header ul {
+header p, {
 	display: inline;
 }
 header p {
 	font-weight: bold;
+	display: inline;
 }
 header h1 {
 	font-size: 1.71em;
@@ -139,7 +144,7 @@ nav h2 {
 ul {
 	margin-bottom: 0em;
 }
-.page {
+.ajout_page {
 	font-size: 0.85em;
 	padding: 0.58em 1em;
 	border: 1px solid white;
@@ -159,6 +164,10 @@ ul {
 	font-family: Rubik;
 	font-variant: small-caps;
 }
+.inpres li {
+	font-size: 1.14em;
+	margin-left: 1.5em;
+}
 .inpres a {
 	color: #00d6d6;
 	font-size: 1.12em;
@@ -173,6 +182,14 @@ ul {
 	color: white;
 	text-decoration: none;
 }
+.search {
+	width: 20px;
+	float: right;
+}
+.search .on {
+	width: 200px;
+	transition: 1s;
+}
 
 /*MAIN SECTION*/
 
@@ -186,6 +203,31 @@ li {
 	margin: 0.25em 0em 0.25em 0em;
 }
 
+.modifier {
+
+	background-color: #457175;
+	padding: 0.58em 1em;
+	font-size: 0.85em;
+	border: 1px solid;
+	font-variant: small-caps;
+	color: white;
+	font-weight: bold;
+	height: 34px;
+}
+.modif {
+	height: 34px;
+    width: 50px;
+    background-color: #457175;
+    border: none;
+    margin-left: 0.2em;
+}
+.partager {
+	font-size: 0.85em;
+	padding: 0.58em 1.5em;
+	border: 1px solid white;
+	font-variant: small-caps;
+	color: white;
+}
 
 main {
 	background-color: rgb(20,65,82);
@@ -240,17 +282,17 @@ a:hover {
 
 /*MAIN ASIDE*/
 
-aside {
+.a_propos {
 	background-color: black;
-	width: 310px;
+	width: 290px;
 	margin-top: 7.5em;
 	float: right;
 }
-aside img {
+.a_propos img {
 	width: 100%;
 	height: auto;
 }
-aside h2 {
+.a_propos h2 {
 	background-color: black;
 	font-size: 1.28em;
 	padding: 0.27em;
@@ -263,11 +305,10 @@ h3 {
 	border-bottom: 2px solid #999;
 	padding: 0.85em;
 }
-aside dl div {
+.a_propos dl div {
 	background-color: #253947;
 	border-bottom: 2px solid #999;
 	padding: 0.41em;
-	width: 100%;
 	font-size: 0.85em;
 }
 dl {

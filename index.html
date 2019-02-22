@@ -37,10 +37,7 @@
 					</a>
 				</li>
 			</ul>
-			<input type="search" value="Rechercher
-
-			">
-			
+			<input type="search" value="Rechercher" class="search">
 		</section>
 		<header>
 			<a href="#">
@@ -57,39 +54,40 @@
 				<text transform="matrix(1 0 0 1 4.2001 30.9154)" class="st1 st2">WIKI Morgane Delvaux</text>
 				</svg> -->
 			</a>
-			<h1 role="heading" aria-level="1">
-				<a href="#">
-					Wiki Inpres
+			<h1 role="heading" aria-level="1" class="wiki_inpres">
+				<a href="#" title="Ramène à l'accueil">
+					Wiki Morgane Delvaux
 				</a>
 			</h1>
-			<p>
+			<p class="page">
 				7 993 pages
 			</p>
-			<a href="#" title="Ajouter une page sur le site" class="page">
+			<a href="#" title="Ajouter une page sur le site" class="ajout_page">
 				Ajouter une page
 			</a>
+			
 			<nav>
 				<h2>
 					Naviguation
 				</h2>
 				<ul>
 					<li>
-						<a href="#" >
+						<a href="#" title="Voir la section etudiant">
 							Études
 						</a>
 					</li>
 					<li>
-						<a href="#" >
+						<a href="#" title="Voir la section langues">
 							Langues
 						</a>
 					</li>
 					<li>
-						<a href="#" >
+						<a href="#" title="Voir la section jobs etudiant">
 							Jobs étudiant
 						</a>
 					</li>
 					<li>
-						<a href="#" >
+						<a href="#" title="Voir la section compétences">
 							Compétences
 						</a>
 					</li>
@@ -98,89 +96,7 @@
 				
 		</header>
 		<main>
-			<aside itemscope itemtype="https://schema.org/Person">
-				<img src="./img/moi.jpg" alt="Photo de Morgane">
-				<h2 role="heading" aria-level="2">
-					<span itemprop="givenName">
-						Morgane
-					</span>
-					<span itemprop="familyName">
-						Delvaux
-					</span> 
-				</h2>
-				<section>
-					<h3 role="heading" aria-level="3">
-						Informations générales
-					</h3>
-					<dl >
-						<div>
-							<dt >
-								Naissance :
-							</dt>
-							<dd itemprop="birthDate">
-								04 avril 1997
-							</dd>
-						</div>
-						<div>
-							<dt>
-								Lieu de naissance :
-							</dt>
-							<dd itemprop="birthPlace">
-								Rocourt
-							</dd>
-						</div>
-						<div>
-							<dt>
-								Age :
-							</dt>
-							<dd itemprop="">
-								21 ans
-							</dd>
-						</div>
-						<div>
-							<dt>
-								Sexe :
-							</dt>
-							<dd itemprop="gender">
-								Femme
-							</dd>
-						</div>
-						<div>
-							<dt>
-								Adresse :
-							</dt>
-							<dd itemprop="address">
-								Rue du Stier, 12 </br>
-								4357 Donceel
-							</dd>
-						</div>
-						<div>
-							<dt>
-								Nationalité :
-							</dt>
-							<dd itemprop="nationality">
-								Belge
-							</dd>
-						</div>
-						<div>
-							<dt>
-								Téléphone :
-							</dt>
-							<dd itemprop="telephone">
-								0489 56 25 87
-							</dd>
-						</div>
-						<div>
-							<dt>
-								Email :
-							</dt>
-							<dd itemprop="email">
-								morganedelvaux04@gmail.com
-							</dd>
-						</div>	
-					</dl>
-				</section>
-			</aside>
+			
 			<p>
 				dans
 				<a href="#">
@@ -191,21 +107,131 @@
 					2285
 				</a> 
 			</p>
+			<select name="" id="">
+				<option value="">
+					Français
+				</option>
+				<option value="">
+					Anglais
+				</option>
+			</select>
 			<h1 role="heading" aria-level="1">
 				Morgane Delvaux
 			</h1>
-			<a href="">
-				
+			<a href="#" title="Modifier la page" class="modifier">
+				Modifier
 			</a>
-			<a href="">
+			<select name="modif" id="modif">
+				<option value="">
+					
+				</option>
+				<option value="">
+					
+				</option>
+				<option value="">
+					
+				</option>
+			</select>
+			<a href="#" title="Partager cette page" class="partager">
 				Partager
 			</a>
-			<div>
+			<aside>
+				<h2>
+					Activités récentes du wiki
+				</h2>
 
+			</aside>
+			<div>
+				<aside itemscope itemtype="https://schema.org/Person" class="a_propos">
+					<img src="./img/moi.jpg" alt="Photo de Morgane">
+					<h2 role="heading" aria-level="2">
+						<span itemprop="givenName">
+							Morgane
+						</span>
+						<span itemprop="familyName">
+							Delvaux
+						</span> 
+					</h2>
+					<section>
+						<h3 role="heading" aria-level="3">
+							Informations générales
+						</h3>
+						<dl >
+							<div>
+								<dt >
+									Naissance :
+								</dt>
+								<dd itemprop="birthDate">
+									04 avril 1997
+								</dd>
+							</div>
+							<div>
+								<dt>
+									Lieu de naissance :
+								</dt>
+								<dd itemprop="birthPlace">
+									Rocourt
+								</dd>
+							</div>
+							<div>
+								<dt>
+									Age :
+								</dt>
+								<dd itemprop="">
+									21 ans
+								</dd>
+							</div>
+							<div>
+								<dt>
+									Sexe :
+								</dt>
+								<dd itemprop="gender">
+									Femme
+								</dd>
+							</div>
+							<div>
+								<dt>
+									Adresse :
+								</dt>
+								<dd itemprop="address">
+									Rue du Stier, 12 </br>
+									4357 Donceel
+								</dd>
+							</div>
+							<div>
+								<dt>
+									Nationalité :
+								</dt>
+								<dd itemprop="nationality">
+									Belge
+								</dd>
+							</div>
+							<div>
+								<dt>
+									Téléphone :
+								</dt>
+								<dd itemprop="telephone">
+									0489 56 25 87
+								</dd>
+							</div>
+							<div>
+								<dt>
+									Email :
+								</dt>
+								<dd itemprop="email">
+									morganedelvaux04@gmail.com
+								</dd>
+							</div>	
+						</dl>
+					</section>
+				</aside>
 				<hr>
 				<p>
 					Morgane est une étudiante à la HEPL dans l'option web
 				</p>
+				<a href="#">
+					Sommaire
+				</a>
 				<section>
 					<h2 role="heading" aria-level="2">
 						Études
@@ -306,5 +332,6 @@
 				</section>
 			</div>
 		</main>
+		<script type="app/js" src="./js/main.js"></script>
 	</body>
 </html>
