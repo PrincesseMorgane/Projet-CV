@@ -210,7 +210,9 @@ ul {
 	display: inline;
 }
 #langue {
-	float: right;
+	background-color: rgb(20,65,82);
+    color: white;
+    border: none;
 }
 .name {
 	font-size: 0.85em;
@@ -221,7 +223,9 @@ ul {
 .nom {
 	font-size: 3em;
 }
-
+.buttons {
+	display: flex;
+}
 .modifier {
 
 	background-color: #457175;
@@ -230,17 +234,15 @@ ul {
 	font-variant: small-caps;
 	color: white;
 	font-weight: bold;
-	height: 34px;
-	display: inline-block;
-	float: right;
+
 }
 #modif {
-	height: 34px;
+
     width: 50px;
     background-color: #457175;
     border: none;
     margin-left: 0.2em;
-    float: right;
+
 }
 .partager {
 	font-size: 0.85em;
@@ -248,7 +250,7 @@ ul {
 	border: 1px solid white;
 	font-variant: small-caps;
 	color: white;
-	float: right;
+
 }
 
 li {
@@ -307,6 +309,23 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+table{
+	background-color: black;
+}
+caption{
+	background-color: #333333;
+	color: white;
+}
+.sous_titre {
+	background-color: #131F26;
+	color: white;
+}
+td {
+	background-color: #1E323D;
+}
+td a+a:before {
+	content: '•'
+}
 
 /*MAIN ASIDE*/
 
@@ -348,5 +367,5 @@ dd, dt {
 }
 dt {
 	font-weight: bold;
-	width: 100px;
+	width: 110px;
 }
