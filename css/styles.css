@@ -164,6 +164,8 @@ ul {
 	background-color: #002a32;
 	color: white;
 	min-height: 55px;
+	position: fixed;
+	width: 100%;
 
 }
 .inpres li, .inpres h1 {
@@ -188,6 +190,16 @@ ul {
 .inpres a:hover {
 	color: white;
 	text-decoration: none;
+}
+.inpres h2 {
+	font-size: 0.85em;
+}
+.inpres-footer {
+	background-color: #002a32;
+	color: white;
+}
+.inpres-footer h2 {
+	font-size: 1.28em;
 }
 .search {
 	width: 20px;
@@ -311,20 +323,33 @@ a:hover {
 }
 table{
 	background-color: black;
+	border: 1px black double thick;
 }
 caption{
 	background-color: #333333;
 	color: white;
 }
-.sous_titre {
+th {
 	background-color: #131F26;
 	color: white;
+	border: solid 1px black;
+	padding: 0.1em 1em;
+	font-size: 0.892em;
+	text-align: right;
+
 }
 td {
 	background-color: #1E323D;
 }
 td a+a:before {
 	content: '•'
+}
+datalist option:first-child:before {
+	content: url(./img/france.svg);
+}
+datalist option+option:before{
+	content: "|";
+	content: url(./img/great-britain.svg);
 }
 
 /*MAIN ASIDE*/
@@ -346,7 +371,7 @@ td a+a:before {
 	text-align: center;
 	font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
 }
-h3 {
+.a_propos h3 {
 	background-color: #131F26;
 	padding: 0.41em;
 	margin: 0px;
